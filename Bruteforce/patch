@@ -1,0 +1,3 @@
+L'ideal et de mettre en place une rate limit pour que la meme ip adress 
+ne puisse pas effectuer un nombre ilimite de requete ET mettre en place une
+politique de mdp plus strict.

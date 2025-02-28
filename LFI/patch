@@ -1,0 +1,28 @@
+niveau patch une simple interdiction des caracteres comme les . ou les / ne suffisent pas
+il faut rajouter % car un simple filtre de . ou / peux etre bypass avec de lencodeur url
+du style  
+
+%2F%2E%2E -> ../
+
+voir doublement encoder
+
+%252F%252E%252E -> %2F%2E%2E -> ../
+
+source:
+
+https://www.urlencoder.org/fr/
+
+mettre en place une whitelist de variable, en l occurence 'page' pour restreindre l'acces
+uniquement au path valid.
+Sinon, un system de regex peut etre mis en place afin d'exclure ces caracteres.
+ou une condition qui decode en boucle pour les %
+...
+
+Dans les configurations de server pour prevenir des RFI (Remote File Inclusion) dans le fichier 
+de configuration server php.ini 
+mettre 
+
+allow_url_fopen = off
+allow_url_include = off
+
+ce qui empechera de charger des fichier depuis des sites externes
