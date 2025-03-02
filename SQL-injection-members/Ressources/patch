@@ -1,0 +1,2 @@
+Utilisationde PDO plutot que des requete faite a la main pour eviter l interaction entre le user
+et la DB (never trust user input !)

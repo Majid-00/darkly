@@ -8,8 +8,6 @@ voir doublement encoder
 
 %252F%252E%252E -> %2F%2E%2E -> ../
 
-source:
-
 https://www.urlencoder.org/fr/
 
 mettre en place une whitelist de variable, en l occurence 'page' pour restreindre l'acces

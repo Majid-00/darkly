@@ -1,0 +1,3 @@
+sanitize l'input toujours parser et ne jamais trust luser input.
+il existe egalement des headers comme les XSS-protection ou les CSP
+Content-Security-Policies mais attention a la configuration de ces derniers.

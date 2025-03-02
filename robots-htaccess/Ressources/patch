@@ -1,0 +1,4 @@
+on y voit clairement que le dossier n'est pas censer etre accessible de base donc
+avant d'envoyer une modif ou un projet en prod toujours verfifier les acces a certaine donnee
+sensible. 
+Utilisation d'un fichier htaccess (fichier de conf apache) afin de proteger lacces au dossier avec un mdp (htpass)
