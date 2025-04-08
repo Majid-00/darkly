@@ -1,0 +1,9 @@
+tout simplement mettre en place un systeme de parser pour les file upload
+il est possible d'injecter un reverse shell avec:
+
+<?php
+    system($_GET['cmd']);
+?>
+
+verifier qu'il sagit bien d'une image car l'extention ne suffit pas la double extention est dangereuse
+script.php.jpg
