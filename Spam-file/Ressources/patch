@@ -1,0 +1,3 @@
+mettre en place une whitelist de variable, en l occurence 'page' pour restreindre l'acces
+uniquement au path valid.
+ou juste ne pas poster
