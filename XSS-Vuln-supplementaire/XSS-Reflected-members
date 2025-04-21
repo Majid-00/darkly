@@ -1,0 +1,3 @@
+un reflected n'a pas beaucoup de repercution a lui seul mais coupler au DOM based celui ci devient plus dangereux
+
+un simple <script>alert(1);</script> fonctionne donc on l'exploite d'une maniere ou dune autre

